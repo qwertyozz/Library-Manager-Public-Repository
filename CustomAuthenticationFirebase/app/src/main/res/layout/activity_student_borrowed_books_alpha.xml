@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".SearchForBooksUpdated">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Borrowed Books"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:fontFamily="@font/roboto__medium"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="24sp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="82"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:padding="10dp"
+                            android:textSize="16sp"
+                            android:id="@+id/editTextSearchBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Search by borrower name"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000"
+                            android:background="@drawable/custom_search_input"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="18"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageButton
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/imageButtonSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/search"
+                            android:background="@drawable/image_button_radius"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/empty_student_view_borrowed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"
+                android:visibility="invisible"
+                android:text="No Borrowed Books" />
+
+            <LinearLayout
+                android:id="@+id/recyclerView_Borrower"
+                android:layout_below="@+id/top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerviewResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.customauthenticationfirebase">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/library_manager_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/library_manager_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PasswordReset"></activity>
+        <activity android:name=".Dashboard" />
+        <activity android:name=".BorrowedBooks" />
+        <activity android:name=".SearchForBooksUpdated" />
+        <activity android:name=".SearchForBooks" />
+        <activity android:name=".AddBooks" />
+        <activity android:name=".UserMenu" />
+        <activity android:name=".CreateAccount" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
