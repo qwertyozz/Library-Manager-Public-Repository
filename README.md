@@ -1,6 +1,8 @@
 # Library Manager :closed_book:
 Library Manager is a Library Management App that has all the basic functionality of a Library. Organizations like schools can benefit from its functions like: Borrowing, Searching, Removing, Approving and Returning Books.
 
+**Note: This is the redacted version of the app, if you need more info about this app email: quelperlado@gmail.com**
+
 # Technology Used :iphone:
 **Firebase :fire:**
 - Realtime Database (Non relational Database)
